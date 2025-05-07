@@ -6,8 +6,6 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
-
 app = Flask(__name__)
 CORS(app)
 
