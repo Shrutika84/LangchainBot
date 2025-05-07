@@ -9,3 +9,5 @@ huggingface-hub
 torch
 sentencepiece
 gunicorn
+langchain
+langchain-community
