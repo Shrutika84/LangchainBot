@@ -15,6 +15,10 @@ def chat():
     bot = FAQBot()
     response = bot.get_response(user_input)
     return jsonify({"response": response})
+    
+@app.route("/", methods=["GET"])
+def home():
+    return "LangChain Bot is running! Use the /chat endpoint."
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))  
