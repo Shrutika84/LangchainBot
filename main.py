@@ -20,6 +20,7 @@ def chat():
 def home():
     return "LangChain Bot is running! Use the /chat endpoint."
 
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))  
     app.run(host="0.0.0.0", port=port, debug=False)
